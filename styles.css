@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.heading{
+  font-family: 'Pacifico', cursive !important;
+}
+
+.display-4{
+  font-family: monospace;
+}
+
+.equationEle::after{
+  content: " = ?";
+}

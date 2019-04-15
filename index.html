@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+  <title>N'ath V'orld | Welcm to Math World!</title>
+</head>
+
+<body>
+  <div class="container my-4">
+    <header>
+      <hr />
+      <h1 class="heading display-4 text-center">N'<small>ath</small> V'<small>orld</small> <small>| Math World</small></h1>
+      <hr />
+    </header>
+    <section class="game_init text-center">
+        <h1 class="display-3">Before Game Rules!</h1>
+      <div class="flex-row form-row justify-content-center">
+    <div class="col-md-4 mb-3">
+      <label for="validationServer01">Please Enter Username:</label>
+      <input type="text" class="form-control username" id="validationServer01" placeholder="Username" value="Unknown" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback">
+        Please Enter Username
+      </div>
+    </div>
+    </div>
+    <button type="button" class="btn btn-outline-success w-25 mx-3 game_init_btn">Start Game!</button>
+    </section>
+    <section class="gameboard">
+    <section>
+      <div class="alert msg-alert alert-info" role="alert">
+        <b class="text-sucess">
+          Message:
+        </b>
+        <span class="lead msgEle">
+            Wishing You Good Luck :) !
+        </span>
+      </div>
+    </section>
+    <section class="EquEle m-4">
+      <div class="display-4 text-center m-2">Random Equation #<span class="attempts">1</span></div>
+      <var class="display-3 d-flex justify-content-center equationEle">
+        <small class="lead">Example:</small> 1 + 1 = ? (11)
+      </var>
+    </section>
+    <section id="UserInput my-3">
+      <div class="form-group row">
+        <div class="col justify-content-center">
+          <input type="number" class="form-control w-25 float-right ansEle" step="1" placeholder="Enter Answer Here" required />
+        </div>
+        <div class="col justify-content-center">
+          <button type="button" class="btn btn-outline-success w-25 float-left evalBtn">Evaluate</button>
+        </div>
+        </div>
+        <div class="form-group flex-row justify-content-center mb-5">
+            <button type="button" class="btn btn-outline-danger w-25 mx-3 float-left quitBtn">Quit</button>
+            <button type="button" class="btn btn-warning w-25 mx-3 float-right skipBtn">Skip</button>
+            <button type="button" class="btn btn-danger w-25 mx-3 float-right resetBtn">Reset</button>
+        </div>
+    </section>
+    <section id="Scoreboard" class="my-3">
+      <div class="row my-5">
+        <div class="col">
+          <div class="display-4 text-center">Score:</div>
+          <div class="display-4 text-center scoreEle">
+            0
+          </div>
+        </div>
+        <div class="col">
+          <div class="display-4 text-center">@CurrentUser:</div>
+          <div class="display-4 text-center user">
+            Unknown
+          </div>
+        </div>
+      </div>
+      </section>
+
+    </section>
+  </div>
+  <hr />
+  <section id="GameRules">
+    <ul>
+      <li class="m-0 p-0 px-2">
+        <b>
+          Team Members: Virang Santoki - 200391547, Nehal Gajjar - 200388614.
+        </b>
+      </li>
+      <li class="m-0 p-0 px-2">
+        <small>
+            <b>
+              Credit for Confetti Animation: Ryan Cardwell (CodePen) -
+              <a href="https://codepen.io/jryancard/pen/xYQNZG">
+                https://codepen.io/jryancard/pen/xYQNZG
+              </a>
+            </b>
+        </small>
+      </li>
+    </ul>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Your code... -->
+  <script type="text/javascript" src="styles.js"></script>
+  <script type="text/javascript" src="rand_num_game.js"></script>
+
+</body>
+
+</html>
